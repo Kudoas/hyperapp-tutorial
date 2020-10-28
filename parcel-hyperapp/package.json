@@ -1,0 +1,16 @@
+{
+  "name": "parcel-hyperapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "hyperapp": "^2.0.8",
+    "parcel": "^1.12.4"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.5"
+  }
+}
