@@ -7,6 +7,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@types/react": "^16.9.54",
     "hyperapp": "^2.0.8",
     "parcel": "^1.12.4"
   },

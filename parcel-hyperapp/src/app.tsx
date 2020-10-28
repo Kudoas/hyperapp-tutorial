@@ -10,17 +10,14 @@ const NewValue = (state: any, event: any) => ({
   value: event.target.value,
 });
 
+const Component = () => <h1>hoge</h1>;
+
 app({
   init: { todos: [], value: "" },
-  view: ({ todos, value }) =>
-    h("main", {}, [
-      h("input", { type: "text", oninput: NewValue, value }),
-      h("button", { onclick: AddTodo }, text("Add")),
-      h(
-        "ul",
-        {},
-        todos.map((todo) => h("li", {}, text(todo)))
-      ),
-    ]),
+  view: () => (
+    <div>
+      <h1>hoge</h1>
+    </div>
+  ),
   node: document.getElementById("app"),
 });
