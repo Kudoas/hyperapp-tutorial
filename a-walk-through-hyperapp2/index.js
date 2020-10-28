@@ -2,6 +2,7 @@ import { h, app } from "https://unpkg.com/hyperapp@2.0.3";
 import { onAnimationFrame } from "https://unpkg.com/@hyperapp/events@0.0.3";
 
 // effect, subscription
+
 // onAnimationFrame
 // export var onAnimationFrame = (function (fx) {
 //   return function (action) {
@@ -81,7 +82,16 @@ app({
             ),
       ]),
       h("p", {}, ["Current state: ", state.mode]),
-      state.remainingTime && h("p", {}, ["Remaining: ", state.remainingTime, " ms"]),
+      h("div", { class: "gauge" }, [
+        h("div", {
+          class: "gauge-meter",
+          style: {
+            width: state.mode !== "stopped" ? (100 * state.remainingTime) / DURATION + "%" : "100%",
+          },
+        }),
+        state.mode !== "stopped" &&
+          h("p", { class: "gauge-text" }, [Math.ceil(state.remainingTime / 1000), " s"]),
+      ]),
     ]),
   subscriptions: (state) => [state.mode === "running" && onAnimationFrame(UpdateTime)],
   node: document.getElementById("app"),
