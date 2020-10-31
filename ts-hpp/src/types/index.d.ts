@@ -374,3 +374,9 @@ declare module "hyperapp" {
       onwaiting: Event;
     };
 }
+
+declare namespace JSX {
+  interface IntrinsicElements {
+    h1: {};
+  }
+}

@@ -1,17 +1,13 @@
-import { h, app } from "hyperapp";
+import { h, app, VDOM } from "hyperapp";
 
 const state = {
   greeting: "こんにちは世界",
 };
 
-const hoge = (state: any) => (
-  <div>
-    <h1>{state.greeting}</h1>
-  </div>
-);
+const view = (state: any): VDOM<any> => <h1>{state.greeting}</h1>;
 
 app({
   init: state,
-  view: hoge,
+  view: view,
   node: document.getElementById("app"),
 });
