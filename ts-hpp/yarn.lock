@@ -2541,10 +2541,10 @@ https-browserify@^1.0.0:
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
 
-hyperapp@^2.0.8:
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/hyperapp/-/hyperapp-2.0.8.tgz#6509a88ce21c43c6c51b98d40ca71e5b8e7b46ef"
-  integrity sha512-RZxmJ3G4VcR23RZfmK6U8KR7wHhXrbXAhKvjQuyg/kAv1bEIymdxUsrJAwtfXj0aasGU7CDQP70Gb2KwfxgJ/w==
+hyperapp@^2.0.9-beta.25:
+  version "2.0.0-beta.25"
+  resolved "https://registry.yarnpkg.com/hyperapp/-/hyperapp-2.0.0-beta.25.tgz#eaefee435ac2689a0331dada51dab5979a75c6c1"
+  integrity sha512-iXTi6Bnw/RL358Vsx6tKp9fnxzxSwpjZvKwBCi5K6DX55PA+JY6jiSBqOcpEgoBVQDfG3NaAOx7HCEyQ38B6yg==
 
 hyperlit@^0.3.6:
   version "0.3.6"

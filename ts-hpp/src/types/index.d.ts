@@ -374,7 +374,3 @@ declare module "hyperapp" {
       onwaiting: Event;
     };
 }
-
-declare module "hyperlit" {
-  export default any;
-}

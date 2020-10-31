@@ -3,7 +3,7 @@
   "private": true,
   "main": "index.js",
   "dependencies": {
-    "hyperapp": "^2.0.8",
+    "hyperapp": "^2.0.9-beta.25",
     "hyperlit": "^0.3.6"
   },
   "devDependencies": {
