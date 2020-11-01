@@ -1,6 +1,6 @@
 # HYPERAPP TUTORIAL
 
-Hyperappをいろいろな環境で試すやつ
+Hyperappをいろいろな環境で試した
 
 ## Keywords
 
@@ -12,5 +12,5 @@ Hyperappをいろいろな環境で試すやつ
 
 ## References
 
-- [Tutorail](https://github.com/jorgebucaran/hyperapp/blob/main/docs/tutorial.md)
+- [Tutorial](https://github.com/jorgebucaran/hyperapp/blob/main/docs/tutorial.md)
 - [A Walk through Hyperapp 2](https://medium.com/hyperapp/a-walk-through-hyperapp-2-b1f642fca172)
