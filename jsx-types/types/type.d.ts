@@ -6,14 +6,40 @@ declare namespace JSX {
   type Element = {
     this_is_element: true;
   };
+
+  // ElementClass
+  interface ElementClass {
+    // renderは必須
+    render: () => any;
+  }
+
   interface IntrinsicElements {
     foo: {
-      hoge: string;
-      fuga: number;
-      children: JSX.Element | string | number;
+      hoge?: string;
+      fuga?: number;
+      children?: JSX.Element | string | number | Array<JSX.Element | string>;
     };
     bar: {
-      children: string;
+      children?: unknown;
     };
   }
+
+  // key
+  interface IntrinsicAttributes {
+    key?: string;
+    hoge: string;
+  }
+
+  // IntrinsicClassAttributes<T>
+  // LibraryManagedAttributes<C, P>
+}
+
+interface MyFunctionComponentProps {
+  foo: string;
+  children?: JSX.Element | string | Array<JSX.Element | string>;
+}
+
+// ClassComponent props
+interface MyProps {
+  hoge: string;
 }
