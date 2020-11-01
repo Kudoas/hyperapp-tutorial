@@ -32,6 +32,10 @@ declare namespace JSX {
 
   // IntrinsicClassAttributes<T>
   // LibraryManagedAttributes<C, P>
+
+  type LibraryManagedAttributes<C, P> = C extends { defaultProps: infer D }
+    ? Partial<Pick<P, Extract<keyof P, keyof D>>> & Pick<P, Exclude<keyof P, keyof D>>
+    : P;
 }
 
 interface MyFunctionComponentProps {
@@ -42,4 +46,22 @@ interface MyFunctionComponentProps {
 // ClassComponent props
 interface MyProps {
   hoge: string;
+}
+
+/* @jsx h */
+declare namespace h.JSX {
+  interface ElementChildrenAttribute {
+    children: any;
+  }
+  type Element = {
+    this_is_element: true;
+  };
+
+  interface ElementClass {
+    render: () => any;
+  }
+
+  type LibraryManagedAttributes<C, P> = C extends { defaultProps: infer D }
+    ? Partial<Pick<P, Extract<keyof P, keyof D>>> & Pick<P, Exclude<keyof P, keyof D>>
+    : P;
 }
