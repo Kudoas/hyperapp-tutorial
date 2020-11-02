@@ -1,18 +1,23 @@
 {
-  "name": "hpp-jsx-v2",
+  "name": "hyperapp-jsx-v2",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "description": "",
+  "main": "index.html",
   "scripts": {
-    "start": "parcel index.html"
-  },
-  "dependencies": {
-    "hyperapp": "^2.0.8"
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.3",
-    "babel-plugin-transform-h-jsx": "^1.0.0",
-    "babel-preset": "^1.1.7",
-    "parcel-bundler": "^1.12.4"
+    "@babel/preset-env": "7.1.0",
+    "@babel/preset-stage-2": "latest",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-react-jsx": "6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "parcel-bundler": "^1.6.1"
+  },
+  "keywords": [],
+  "dependencies": {
+    "hyperapp": "2.0.4"
   }
 }

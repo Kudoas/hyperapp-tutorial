@@ -1,4 +1,11 @@
 {
-  "presets": ["@babel/preset-env"],
-  "plugins": ["babel-plugin-transform-h-jsx"]
+  "presets": ["env", "stage-2"],
+  "plugins": [
+    [
+      "transform-react-jsx",
+      {
+        "pragma": "h"
+      }
+    ]
+  ]
 }
