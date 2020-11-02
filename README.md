@@ -8,7 +8,7 @@ Hyperappをいろいろな環境で試した時のメモ
 - JSX対応はv2だと2.0.5からかなり大きめな変更があったようで、babelでトランスパイルしてもうまく動作しない
     （2.0.4以前は`transform-react-jsx`を使うと動くことは確認できた）
 - JSXがなくてもviewを効率よくかけるものが用意してある
-    - [@hyperapp/html](https://github.com/jorgebucaran/hyperapp/tree/main/pkg/html)：h関数をいい感じに変化してちょっと使いやすくしてある公式パッケージ
+    - [@hyperapp/html](https://github.com/jorgebucaran/hyperapp/tree/main/pkg/html)：h関数をラッピングしてちょっと使いやすくした公式パッケージ
     - [hyperlit](https://github.com/zaceno/hyperlit)：JSXライクにかけるパッケージ
     - [Picostyle](https://github.com/morishitter/picostyle)：超軽量なCSS in JSのライブラリ、Hyperappにも対応している
 - TS導入したい場合はhyperapp型を用意する必要がある。[公式](https://github.com/jorgebucaran/hyperapp/blob/2c5af2bee7c7c3a44c71f72dc761deb4e47b8a81/types/index.d.ts)で用意してくれている。
