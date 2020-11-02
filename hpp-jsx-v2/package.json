@@ -1,0 +1,18 @@
+{
+  "name": "hpp-jsx-v2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "dependencies": {
+    "hyperapp": "^2.0.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "babel-plugin-transform-h-jsx": "^1.0.0",
+    "babel-preset": "^1.1.7",
+    "parcel-bundler": "^1.12.4"
+  }
+}
